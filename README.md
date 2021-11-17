@@ -18,3 +18,35 @@ Tiene cinco valores diferentes :
 - ease-in : inicio lento y al llegar al final rapido
 - ease-out:inicio rapido y al llegar al final lento
   -ease-in-out
+
+## transition
+
+Se pueden añadir mas de una propiedad
+ejemplo :
+
+<pre>
+  transition-property: background-color color;
+  </pre>
+
+Se pueden incluir todas las propiedades con la palabra all
+
+<pre>
+  transition-property: all;
+  </pre>
+
+Hay una propiedad abreviadas que tiene encuenta todas las propiedades de transicion llamada transition :
+
+<pre>
+transition: all 3s ease-in 2s;
+</pre>
+
+## Propiedades que no pueden ser animadas
+
+PROPIEDADES QUE NO TIENE VALORES INTERMEDIOS
+
+- Diplay
+- Background-image
+- Border
+- FLOAT
+
+LISTA :https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions

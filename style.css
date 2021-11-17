@@ -6,12 +6,13 @@ button {
   color: white;
   border: none;
   background-color: blue;
-  transition-property: background-color;
-  transition-duration: 3000ms;
+  transition: all 1s ease-in 30ms;
 }
 
 button:hover {
   background-color: green;
+  color: yellow;
+  width: 500px;
 }
 
 /*Proyecto 2*/
@@ -32,6 +33,7 @@ button:hover {
   font-size: 20px;
   transition-property: translate();
   transition-duration: 3s;
+  transition-delay: 1s;
 }
 
 #ease {
