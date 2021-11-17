@@ -1,3 +1,4 @@
+/*Proyecto 2*/
 button {
   height: 90px;
   width: 290px;
@@ -11,4 +12,48 @@ button {
 
 button:hover {
   background-color: green;
+}
+
+/*Proyecto 2*/
+.proyecto-2 .container {
+  width: 960px;
+}
+
+.proyecto-2 .move {
+  margin: 2em;
+  width: 150px;
+  height: 50px;
+  padding: 10px 15px;
+  background-color: red;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 0.5em;
+  font-size: 20px;
+  transition-property: translate();
+  transition-duration: 3s;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+  transform: translate(900px, 0);
 }
