@@ -1,0 +1,294 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-1 {
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid #262626;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.hover-1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff200;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 1s;
+}
+
+.hover-1:hover:before {
+  transform: rotate(0deg);
+}
+
+.hover-2 {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.hover-2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.hover-2:hover:before {
+  transform: translateY(0);
+}
+.hover-2:hover {
+  color: white;
+}
+
+.hover-3 {
+  padding: 40px 80px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #262626;
+  font-size: 45px;
+  letter-spacing: 2px;
+  border: 5px solid #262626;
+  position: relative;
+  transition: 1s;
+  margin: 30px;
+}
+
+.hover-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+
+.hover-3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+
+.hover-3:hover:before {
+  transform: rotateX(0);
+}
+
+.hover-3:hover:after {
+  transform: rotateY(0);
+}
+
+.hover-3:hover {
+  color: white;
+}
+
+.hover-4 {
+  text-decoration: none;
+  padding: 40px 80px;
+  color: #e1332d;
+  border: 3px solid #e1332d;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "roboto";
+  font-weight: 300;
+  letter-spacing: -2px;
+  transition: all 0.5s;
+  margin: 30px;
+}
+
+.hover-4:hover {
+  font-weight: 900;
+  letter-spacing: 10px;
+  border: 7px solid #e1332d;
+  margin: 30px;
+}
+
+.hover-5 {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid black;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.hover-5:before {
+  content: "YEAH!";
+  color: white;
+  background-color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.hover-5:hover:before {
+  transform: translateY(0);
+}
+
+.hover-6 {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid black;
+  padding: 40px 80px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.hover-6:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.hover-6:before {
+  content: "";
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.hover-6:hover:before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.hover-7 {
+  text-decoration: none;
+  background-color: #262626;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 4px solid #262626;
+  padding: 40px 80px;
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.hover-7:before {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fffa65;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.hover-7:after {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fffa65;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translate(-100%, 100%);
+}
+
+.hover-7:hover:before {
+  transform: translate(100%, -100%);
+}
+
+.hover-7:hover:after {
+  transform: translate(0, 0);
+}
+
+.hover-8 {
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #262626;
+  padding: 40px 80px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-8:before {
+  content: "Hover me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.hover-8:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
